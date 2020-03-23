@@ -76,11 +76,11 @@
             if (t.up) {
                 daysSpan.innerHTML = t.days;
                 daysSpan.style.color = "green";
-                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                hoursSpan.innerHTML = ('0');
                 hoursSpan.style.color = "green";
-                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                minutesSpan.innerHTML = ('0');
                 minutesSpan.style.color = "green";
-                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+                secondsSpan.innerHTML = ('0');
                 secondsSpan.style.color = "green";
 
                 if(type == "del"){
@@ -93,7 +93,7 @@
                     document.getElementById("messsage").style.color = "green";
                     document.getElementById("message").style.display = "none";
                 } else {
-                    document.getElementById("topMessage").innerHTML = "The timer has been expired since ";
+                    document.getElementById("topMessage").innerHTML = "NO TIME REMAINING";
                     document.getElementById("messsage").style.color = "green";
                     document.getElementById("message").style.display = "none";
                 }
